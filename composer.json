@@ -4,6 +4,7 @@
     "type": "library",
     "keywords": ["ipd", "tv", "dashboard", "rest", "api", "client"],
     "homepage": "https://github.com/assaneonline/ipd-tv-php-client",
+    "license": "MIT",
     "authors": [
         {
             "name": "Assane Mbengue",
