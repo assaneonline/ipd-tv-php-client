@@ -10,9 +10,10 @@ $ipdTvClient = new Client([
 ]);
 
 $response = $ipdTvClient->pushData('data_source-13939', [
-    'data:1' => 'api:pushed:1',
-    'data:2' => 'api:pushed:2',
-    'data:3' => 'api:pushed:3',
+    "data:1" => 'COVID voyageurs',
+    "data:2" => 'account-multiple-outline',
+    "data:3" => $stats && $stats['status'] == 'ok' ? $stats['data'] : '---',
+    "data:4" => "voyageurs enregistrés",
 ]);
 
 var_dump('$response', $response);

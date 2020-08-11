@@ -1,15 +1,21 @@
 {
-    "name": "assaneonline/ipd-tv-php-client",
+    "name": "assaneonline/ipdtv-php-client",
     "description": "IPD TV Data Production PHP Client",
+    "type": "library",
+    "keywords": ["ipd", "tv", "dashboard", "rest", "api", "client"],
+    "homepage": "https://github.com/assaneonline/ipd-tv-php-client",
     "authors": [
         {
             "name": "Assane Mbengue",
-            "email": "assane101@gmail.com"
+            "email": "assane101@gmail.com",
+            "homepage": "https://github.com/assaneonline",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "ext-curl": "^7.3"
     },
     "autoload": {
         "psr-0": {
