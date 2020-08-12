@@ -28,10 +28,13 @@ $ipdTvClient = new Client([
     'application_secret' => '<REPLACE_WITH_YOUR_APPLICATION_SECRET>'
 ]);
 
-$response = $ipdTvClient->pushData('data_source-13939', [
-    "data:1" => 'Widget title', // Widget title
-    "data:2" => 'account-multiple-outline', // Widget icon
-    "data:3" => rand(1000, 999), // Widget numeric value
-    "data:4" => "voyageurs enregistrés", // Widget subtitle
-]);
+$response = $ipdTvClient->pushData(
+    'data_source-13939', // DataSource UID as defined in IPD TV Admin
+    [
+        "data:1" => 'Widget title', // Widget title
+        "data:2" => 'account-multiple-outline', // Widget icon
+        "data:3" => rand(1000, 999), // Widget numeric value
+        "data:4" => "voyageurs enregistrés", // Widget subtitle
+    ]
+);
 ```
