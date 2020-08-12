@@ -23,11 +23,7 @@ class Client {
         $ch = curl_init(self::API_BASE_PATH.'data_source/push');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
-
-        // execute!
         $response = curl_exec($ch);
-
-        // close the connection, release resources used
         curl_close($ch);
         
         if($response && strlen($response))

@@ -12,7 +12,7 @@ $ipdTvClient = new Client([
 $response = $ipdTvClient->pushData('data_source-13939', [
     "data:1" => 'COVID voyageurs',
     "data:2" => 'account-multiple-outline',
-    "data:3" => $stats && $stats['status'] == 'ok' ? $stats['data'] : '---',
+    "data:3" => rand(1000, 999),
     "data:4" => "voyageurs enregistrés",
 ]);
 
