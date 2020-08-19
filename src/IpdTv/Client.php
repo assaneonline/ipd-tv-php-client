@@ -4,7 +4,7 @@ namespace IpdTv;
 
 class Client {
 
-    const API_BASE_PATH = 'http://10.1.7.42/collector/_ipd_tv/?__q=api/v1/';
+    const API_BASE_PATH = 'http://tv.pasteur.sn/api/v1/';
 
     function __construct($configs = []){
         $this->config = $configs;
