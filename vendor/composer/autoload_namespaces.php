@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'IpdTv' => array($baseDir . '/src'),
+    'Core' => array($baseDir . '/src'),
 );
